@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><!-- ru -->
+
+<head>
+    <meta charset="utf-8">
+    <title> Double Shadow </title>
+    <!-- Copyright (c) 2025, AnBr75 and/or its affiliates. All rights reserved. -->
+    <!-- created 18.07.2025 -->
+
+    <link rel='stylesheet' href='3_css/index.css' />
+    <link rel="icon" type="image/x-icon" href='4_resource/favicon/favicon.ico'>
+
+</head>
+
+<body>
+
+    <h2 class="w"> <img src="4_resource/images/creatures/cr_1.png" alt="g" title="Игра в разработке">
+        Double Shadow [in development]
+        <img src="4_resource/images/creatures/cr_1.png" alt="g">
+    </h2>
+
+    <!-- дата в виде  The dateTime is specified in the following form "YYYY-MM-DDThh:mm:ss" 
+        where: YYYY indicates the year. MM indicates the month. DD indicates the day.-->
+    <h4 class="w"> Last update <time datetime="2025-07-19">19.07m.25</time> </h4>
+
+    <!--The game canvas-1600-800 -->
+    <canvas id='game-canvas' width='1200' height='730'>
+        Your browser does not support HTML5 Canvas<br>
+        Ваш браузер не поддерживает HTML5 графику<br>
+    </canvas>
+
+    <!--блок с кнопками -->
+    <div id="container">
+        <!-- кнопка -->
+        <input type="button" id="buttonStart" value="Start Game" onclick="Index_R.startGameButton()" />
+        <input type="button" id="buttonContinue" value="Continue Game" onclick="Index_R.continueGameButton()" />       
+        <input type="button" id="buttonPause" value="Pause Game" onclick="Index_R.pauseGameButton()" />
+        <input type="button" id="buttonEnd" value="End Game" onclick="Index_R.endGameButton()" />
+        <input type="button" id="buttonTest" value="test" onclick="Index_R.testButton()" />
+    </div>
+
+    <!------------------------------------------------------------------------------------------->
+    <!-- Scripts -->
+    <!-- 1_index -->
+    <script src='./2_js/1_index/timer.js'></script>
+    <script src='./2_js/1_index/buttons.js'></script>
+    <!-- 2_graphics_2d/html5_canvas -->
+    <script src='./2_js/2_graphics_2d/html5_canvas/html5_canvas_text.js'></script>
+    <script src='./2_js/2_graphics_2d/html5_canvas/html5_canvas_primitive.js'></script>
+    <script src='./2_js/2_graphics_2d/html5_canvas/html5_canvas_image.js'></script>
+    <script src='./2_js/2_graphics_2d/html5_canvas/html5_canvas.js'></script>
+    <!-- 2_graphics_2d/html5_sprites -->
+    <script src='./2_js/2_graphics_2d/html5_sprites/sprite_c.js'></script>     
+    <script src='./2_js/2_graphics_2d/html5_sprites/html5_sprites_collection.js'></script>
+
+    <script src='./2_js/game2d.js'></script>  
+     <!-- 1_index -->
+    <script src='./2_js/1_index/index.js'></script>
+
+    <script>
+         Index_R.iniM();
+    </script>
+
+</body>
+
+</html>
