@@ -19,6 +19,8 @@ class Game2d_C {
     frames_O = new Frames_C();    
     html5CanvasMouse_O = new Html5CanvasMouse_C(); 
     drawTimerNumber_O = new DrawTimerNumber_C();       
+    html5CanvasMouse_O = new Html5CanvasMouse_C();
+    drowMouse_O = new DrowMouse_C();
 
     x = 50;
     y = 50;
@@ -43,7 +45,8 @@ class Game2d_C {
         this.frames_O.iniM(this.html5Canvas_O);
         this.html5CanvasMouse_O.iniM(this.html5Canvas_O.idCanvas);
         this.drawTimerNumber_O.iniM(timer, this.html5Canvas_O);
-        
+        this.html5CanvasMouse_O.iniM(this.html5Canvas_O.idCanvas);
+        this.drowMouse_O.iniM(this.html5Canvas_O,this.html5CanvasMouse_O);
         
     }
 
@@ -73,7 +76,7 @@ class Game2d_C {
         
         this.drawTimerNumber_O.drawTimerTick(50, 230);
         this.drawTimerNumber_O.drawNumberTick(50, 170, this.countTick)
-
+        this.drowMouse_O.drow();
     }
     tickContinueGame() {
         console.log('Game_C->tickContinueGame');

@@ -14,13 +14,14 @@
 
 class DrowMouse_C {
     html5Canvas_R = null;
-    html5CanvasMouse_R = new Html5CanvasMouse_C();
+    html5CanvasMouse_R = null;
+
     static NAME = "DrowMouse_C";
     constructor() {
     }
-    iniM(html5Canvas_R, html5CanvasMouse_R) {
-        this.html5Canvas_R = html5Canvas_R;
-        this.html5CanvasMouse_R.iniM(html5Canvas_R.idCanvas);
+    iniM(html5Canvas, html5CanvasMouse) {
+        this.html5Canvas_R = html5Canvas;
+        this.html5CanvasMouse_R = html5CanvasMouse;
     }
     drow() {
         let X0 = 550;
