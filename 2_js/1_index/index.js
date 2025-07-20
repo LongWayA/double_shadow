@@ -36,13 +36,14 @@ let Index_R = {
         Index_R.gameState = Index_R.DONT_GAME;
         Index_R.timer_O.iniM();
         Index_R.buttons_O.iniM();
-        Index_R.game_O.iniM();
+        Index_R.game_O.iniM(Index_R.timer_O);
     },
 
     startGameButton() {
         console.log('Index_R->startGameButton');
         Index_R.gameState = Index_R.START_GAME;
         Index_R.buttons_O.startButtonAttribute();
+        Index_R.timer_O.iniTicksPerSecond(5);
         Index_R.startMenu();
     },
 
@@ -50,12 +51,14 @@ let Index_R = {
         console.log('Index_R->continueGameButton');
         Index_R.gameState = Index_R.CONTINUE_GAME;
         Index_R.buttons_O.continueButtonAttribute();
+        Index_R.timer_O.iniTicksPerSecond(2);
     },
 
     pauseGameButton() {
         console.log('Index_R->pauseGameButton');
         Index_R.gameState = Index_R.PAUSE_GAME;
         Index_R.buttons_O.pauseButtonAttribute();
+        Index_R.timer_O.iniTicksPerSecond(0.5);
     },
 
     endGameButton() {

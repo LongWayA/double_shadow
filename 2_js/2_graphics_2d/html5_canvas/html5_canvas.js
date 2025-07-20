@@ -20,7 +20,7 @@ class Html5Canvas_C {
     html5CanvasPrimitive_R = new Html5CanvasPrimitive_C();
     html5CanvasImage_R = new Html5CanvasImage_C();
     static NAME = "html5Canvas_C";
-     // "2d" создаем объекта CanvasRenderingContext2D,
+    // "2d" создаем объекта CanvasRenderingContext2D,
     //  представляющий двумерный контекст.   
     idCanvas = null;
     contextCanvas = null;
@@ -73,7 +73,7 @@ class Html5Canvas_C {
     setFont(font) {
         this.html5CanvasText_R.setFont(font);
     }
-     // Печатаем текст на экране средствами HTML5 Canvas
+    // Печатаем текст на экране средствами HTML5 Canvas
     // _text - любой текст в ковычках вида "Пример текста"
     // _left - задание расположения текста, отсчитывается от левого края 
     // _top  - задание расположения текста, отсчитывается от верхнего края
