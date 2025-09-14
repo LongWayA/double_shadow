@@ -13,7 +13,7 @@
 */
 
 
-        let requests = "OK";
+/*         let requests = "OK";
         let get_text_requests = document.getElementById("text_requests");
     
           // 1. Создаём новый объект XMLHttpRequest
@@ -37,4 +37,4 @@
                // вывести результат
                //document.write('Запросов к странице = ' + xhr.response);// xhr.responseText по старому
                get_text_requests.value = "Запросов: " + xhr.response;
-          } 
+          }  */
