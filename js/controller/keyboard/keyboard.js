@@ -16,17 +16,22 @@
 */
 
 class UserInputKeyboard_C {
+
     html5Canvas_R = null;
     html5Sprites_R = null;
+
     static NAME = "UserInputKeyboard_C";
     command = "_";
+
     constructor() {
     }
+
     iniM(html5Canvas_R, html5Sprites_R) {
         this.html5Canvas_R = html5Canvas_R;
         this.html5Sprites_R = html5Sprites_R;
         userInputKeyboardEvent_R.iniM();
     }
+
     tick(immortals, ground) {
         if (userInputKeyboardEvent_R.isKeyDown == 1) {
             userInputKeyboardEvent_R.isKeyDown = 0;
@@ -52,6 +57,7 @@ class UserInputKeyboard_C {
             }
         }
     }
+
     drow() {
         let X0 = 550;
         let Y0 = 600;
@@ -75,6 +81,7 @@ class UserInputKeyboard_C {
         let height_3 = 22;
         this.printText(this.command, left_3, top_3, width_3, height_3, X0_3, Y0_3);
     }
+
     printText(text, left, top, width, height, x0, y0) {
         this.html5Canvas_R.clearRect(left, top, width, height);
         this.html5Canvas_R.drawRect(left, top, width, height, 1, 'blue', 0);

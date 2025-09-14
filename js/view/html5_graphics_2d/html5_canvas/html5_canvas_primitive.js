@@ -24,40 +24,51 @@ class Html5CanvasPrimitive_C {
     
     constructor() {
     }
+
     iniM(idCanvas, contextCanvas) {
         this.idCanvas = idCanvas;
         this.contextCanvas = contextCanvas;
     }
+
     set_fillStyle(color) {
         this.contextCanvas.fillStyle = color;
     }
+
     get_fillStyle() {
         return this.contextCanvas.fillStyle;
     }
+
     set_strokeStyle(_color) {
         this.contextCanvas.strokeStyle = _color;
     }
+
     set_lineWidth(_lineWidth) {
         this.contextCanvas.lineWidth = _lineWidth;
     }
+
     get_lineWidth() {
         return this.contextCanvas.lineWidth;
     }
+
     clearRect_(left, top, width, height) {
         this.contextCanvas.clearRect(left, top, width, height);
     }
+
     fillRect(left, top, width, height) {
         this.contextCanvas.fillRect(left, top, width, height);
     }
+
     strokeRect(left, top, width, height) {
         this.contextCanvas.strokeRect(left, top, width, height);
     }
+
     circle(centerX, centerY, radius, startAngle, endAngle, clockwise) {
         this.contextCanvas.beginPath();
         this.contextCanvas.arc(centerX, centerY, radius, startAngle, endAngle, clockwise);
         this.contextCanvas.closePath();
         this.contextCanvas.stroke();
     }
+
     drawCreaturesCircle_(centerX, centerY, radius, angle) {
         let p = 2;
         let x = radius * Math.cos(angle) - 0 * Math.sin(angle);
@@ -76,6 +87,7 @@ class Html5CanvasPrimitive_C {
         this.contextCanvas.closePath();
         this.contextCanvas.stroke();
     }
+
     drawSmile() {
         this.contextCanvas.beginPath();
         this.contextCanvas.fill();
@@ -106,6 +118,7 @@ class Html5CanvasPrimitive_C {
         this.contextCanvas.fill();
         this.contextCanvas.closePath();
     }
+
     setColor(color) {
         let style = '#ffffff';
         switch (color) {
@@ -128,9 +141,11 @@ class Html5CanvasPrimitive_C {
         this.set_fillStyle(style);
         this.set_strokeStyle(style);
     }
+
     clearRect(left, top, width, height) {
         this.clearRect_(left, top, width, height);
     }
+
     drawRect(left, top, width, height, lineWidth, color, fillYes) {
         let style_r = this.get_fillStyle();
         let lineWidth_r = this.get_lineWidth();
@@ -146,6 +161,7 @@ class Html5CanvasPrimitive_C {
         this.set_strokeStyle(style_r);
         this.set_lineWidth(lineWidth_r);
     }
+
     drawCircle(centerX, centerY, radius, sAngle, eAngle, clockwise, lineWidth, color) {
         let style_r = this.get_fillStyle();
         let lineWidth_r = this.get_lineWidth();
@@ -156,6 +172,7 @@ class Html5CanvasPrimitive_C {
         this.set_strokeStyle(style_r);
         this.set_lineWidth(lineWidth_r);
     }
+    
     drawCreaturesCircle(centerX, centerY, radius, angle, lineWidth, color) {
         let style_r = this.get_fillStyle();
         let lineWidth_r = this.get_lineWidth();

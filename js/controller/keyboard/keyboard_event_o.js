@@ -35,6 +35,7 @@ let userInputKeyboardEvent_R = {
     eventCodeOneDown: 0,
     eventKey: "_",
     command: "_",
+
     iniM() {
         window.addEventListener("keydown", userInputKeyboardEvent_R.keyDownE);
         window.addEventListener("keyup", userInputKeyboardEvent_R.keyUpE);
@@ -44,6 +45,7 @@ let userInputKeyboardEvent_R = {
         userInputKeyboardEvent_R.eventCodeOneDown = 0;
         userInputKeyboardEvent_R.isKeyDown = 0;
     },
+
     // во время нажатия клавиши вызывается эта функция
     // на нажатие реагируем один раз. один раз записываем какую кнопку нажали   
     keyDownE(event) {
@@ -55,6 +57,7 @@ let userInputKeyboardEvent_R = {
             userInputKeyboardEvent_R.eventCodeOneDown = 1;
         }
     },
+    
     keyUpE(event) {
         if (userInputKeyboardEvent_R.eventCodeOneDown == 1) {
             userInputKeyboardEvent_R.eventCodeOneDown = 0;

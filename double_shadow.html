@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><!-- ru -->
+
+<head>
+
+    <meta charset="utf-8">
+    <title> Double Shadow </title>
+    <!-- Copyright (c) 2025, AnBr75 and/or its affiliates. All rights reserved. -->
+    <!-- created 18.07.2025 -->
+
+    <link rel='stylesheet' href='css/index.css' />
+    <link rel="icon" type="image/x-icon" href='resource/favicon/favicon.ico'>
+
+</head>
+
+<body>
+
+    <h2 class="w"> <img src="resource/images/creatures/cr_1.png" alt="g" title="Игра в разработке">
+        Double Shadow [in development]
+        <img src="resource/images/creatures/cr_1.png" alt="g">
+    </h2>
+
+    <!-- дата в виде  The dateTime is specified in the following form "YYYY-MM-DDThh:mm:ss" 
+        where: YYYY indicates the year. MM indicates the month. DD indicates the day.-->
+    <h4 class="w"> Last update <time datetime="2025-09-14">14.09m.25</time> </h4>
+
+    <input type="text" name="t_requests" id="text_requests" value="requests"
+        style="background-color: rgb(215, 215, 223)"><br>
+
+    <!--The game canvas-1600-800 -->
+    <canvas id='game-canvas' width='1200' height='730'>
+        Your browser does not support HTML5 Canvas<br>
+        Ваш браузер не поддерживает HTML5 графику<br>
+    </canvas>
+
+    <!--блок с кнопками -->
+    <div id="container">
+        <!-- кнопка -->
+        <input type="button" id="buttonStart" value="Start Game" onclick="DoubleShadow_R.startGameButton()" />
+        <input type="button" id="buttonContinue" value="Continue Game" onclick="DoubleShadow_R.continueGameButton()" />
+        <input type="button" id="buttonPause" value="Pause Game" onclick="DoubleShadow_R.pauseGameButton()" />
+        <input type="button" id="buttonEnd" value="End Game" onclick="DoubleShadow_R.endGameButton()" />
+        <input type="button" id="buttonTest" value="test" onclick="DoubleShadow_R.testButton()" />
+    </div>
+
+
+    <script>
+    </script>
+
+    <!-- Scripts -->
+
+    <!-- browser/ -->
+    <script src='js/browser/pathes_browser.js'></script>    
+    <script src='js/browser/timer.js'></script>
+    <script src='js/browser/buttons.js'></script>
+
+    <!-- web/ -->
+    <script src='js/web/pathes_web.js'></script>
+    <script src='js/web/counter.js'></script>
+
+    <!-- controller -->
+    <script src='js/controller/mouse/html5_canvas_mouse.js'></script>
+
+    <!-- view/ -->
+    <!-- view/html5_graphics_2d/html5_canvas -->
+    <script src='js/view/html5_graphics_2d/html5_canvas/html5_canvas_text.js'></script>
+    <script src='js/view/html5_graphics_2d/html5_canvas/html5_canvas_primitive.js'></script>
+    <script src='js/view/html5_graphics_2d/html5_canvas/html5_canvas_image.js'></script>
+    <script src='js/view/html5_graphics_2d/html5_canvas/html5_canvas.js'></script>
+
+    <!-- view/html5_graphics_2d/html5_sprites -->
+    <script src='js/view/html5_graphics_2d/html5_sprites/sprite_c.js'></script>
+    <script src='js/view/html5_graphics_2d/html5_sprites/html5_sprites_collection.js'></script>
+
+    <!-- view/html5_graphics_2d/drow -->
+    <script src='js/view/html5_graphics_2d/drow/drow_timer_number.js'></script>
+    <script src='js/view/html5_graphics_2d/drow/drow_mouse.js'></script>
+
+    <!-- model/game -->
+    <script src='js/model/game/frames.js'></script>
+    <script src='js/model/game/game2d.js'></script>
+
+    <!-- browser -->
+    <script src='js/browser/double_shadow.js'></script>
+
+    <script>
+        DoubleShadow_R.iniM();
+    </script>
+
+</body>
+
+</html>

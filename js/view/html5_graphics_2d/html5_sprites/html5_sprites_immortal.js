@@ -25,7 +25,7 @@
 class Html5SpritesImmortal_C {
     NAME = "html5SpritesImmortal_R";
     html5Canvas_R = null;
-    PATH_TO_IMAGES = "4_resource/images/immortals_img/";
+    PATH_TO_IMAGES = PathesBrowser_R.pathToImages_html5_sprites_immortal_js;
     MAX_COUNT = 3;
     sprites = new Array(1);
     constructor() {

@@ -25,7 +25,7 @@
 
 class Html5SpritesCollection_C {
     static NAME = "Html5SpritesCollection_C";
-    static PATH_TO_IMAGES = "4_resource/images";
+    static PATH_TO_IMAGES = PathesBrowser_R.pathToImages_html5_sprites_collection_js;
     static REZERV = 0;
     static ADVENTURES = 1;
     static GROUNDS = 2;

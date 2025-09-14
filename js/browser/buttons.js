@@ -13,13 +13,14 @@
 */
 
 class Buttons_C {
-    static NAME = "Buttons_C";
 
     elementbuttonStart = document.getElementById("buttonStart");
     elementbuttonContinue = document.getElementById("buttonContinue");   
     elementbuttonPause = document.getElementById("buttonPause");
     elementbuttonEnd = document.getElementById("buttonEnd");
     elementbuttonTest = document.getElementById("buttonTest");
+
+    static NAME = "Buttons_C";
 
     constructor() {
     }

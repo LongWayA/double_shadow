@@ -29,6 +29,7 @@ class Html5CanvasText_C {
     load = 0;
     constructor() {
     }
+
     iniM(idCanvas, contextCanvas) {
         this.idCanvas = idCanvas;
         this.contextCanvas = contextCanvas;
@@ -37,33 +38,43 @@ class Html5CanvasText_C {
         this.set_lineWidth(Html5CanvasText_C.LINE_WIDTH_1);
         this.set_font(Html5CanvasText_C.ITALIC_15PT_ARIAL);
     }
+
     set_fillStyle(_color) {
         this.contextCanvas.fillStyle = _color;
     }
+
     get_fillStyle() {
         return this.contextCanvas.fillStyle;
     }
+
     set_strokeStyle(_color) {
         this.contextCanvas.strokeStyle = _color;
     }
+
     set_lineWidth(_lineWidth) {
         this.contextCanvas.lineWidth = _lineWidth;
     }
+
     set_font(_font) {
         this.contextCanvas.font = _font;
     }
+
     get_font() {
         return this.contextCanvas.font;
     }
+
     set_textBaseline(_textBaseline) {
         this.contextCanvas.textBaseline = _textBaseline;
     }
+
     fillText(_text, _left, _top) {
         this.contextCanvas.fillText(_text, _left, _top);
     }
+
     strokeText(_text, _left, _top) {
         this.contextCanvas.strokeText(_text, _left, _top);
     }
+
     setColor(color) {
         let style = '#ffffff';
         switch (color) {
@@ -86,6 +97,7 @@ class Html5CanvasText_C {
         this.set_fillStyle(style);
         this.set_strokeStyle(style);
     }
+
     setFont(font) {
         this.set_textBaseline('top');
         switch (font) {
@@ -100,6 +112,7 @@ class Html5CanvasText_C {
                 break;
         }
     }
+    
     // возможно установить:
     // HTML5_Canvas_text_2.ITALIC_20PX_SANS_SERIF, HTML5_Canvas_text_2.ITALIC_30PT_ARIAL, HTML5_Canvas_text_2.BOLD_30PX_SANS_SERIF
     //HTML5_Canvas_text_2.WHITE, HTML5_Canvas_text_2.BLACK, HTML5_Canvas_text_2.RED, HTML5_Canvas_text_2.GREEN, HTML5_Canvas_text_2.BLUE

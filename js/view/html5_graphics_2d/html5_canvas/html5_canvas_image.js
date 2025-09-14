@@ -13,20 +13,33 @@ class Html5CanvasImage_C {
     static DRAW_MIRROR = true;
     constructor() {
     }
+
     iniM(idCanvas, contextCanvas) {
         this.idCanvas = idCanvas;
         this.contextCanvas = contextCanvas;
     }
+
     drawImage_(image, left, top) {
         this.contextCanvas.drawImage(image, left, top);
     }
+
     drawImage_w_h(image, left, top, width, height) {
         this.contextCanvas.drawImage(image, left, top, width, height);
     }
+
     scale() {
         this.contextCanvas.scale(-1, 1);
     }
+
     drawImage(image, left, top, width, height, mirror) {
+        /* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void
+           The void operator is often used merely to obtain the undefined primitive value, 
+           usually using void(0) (which is equivalent to void 0). 
+           In these cases, the global variable undefined can be used.
+           Оператор void часто используется только для получения примитивного значения undefined, 
+           обычно с помощью void(0) (что эквивалентно void 0). 
+           В таких случаях можно использовать глобальную переменную undefined.
+        */
         if (width === void 0) {
             width = 0;
         }

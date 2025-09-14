@@ -32,5 +32,3 @@ class Sprite_Imm_C {
     }
 }
 export { Sprite_Imm_C };
-if (global_R.print_module_start_finish)
-    console.log('sprite_i_c.js -> module finish');
